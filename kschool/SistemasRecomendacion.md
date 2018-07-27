@@ -22,6 +22,9 @@ Relaciones
     Este tipo de algoritmos trata de averiguar la similaridad entre dos items
     La representación se refiere a cómo puedo proyectar el dato para que sea fácil encontrar la distancia.
     
+    Para definir la similitud hay que definir una métric de distancia
+    Otro concepto interesante es la representación, i.e., como represento mis datos para poder encontrar similitudes
+    
     
   3. Basados en contenido
     El conjunto de caracteristicas que define el producto es el elemento que se explota para hacer la recomendación.
