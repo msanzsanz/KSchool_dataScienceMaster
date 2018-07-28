@@ -17,10 +17,65 @@ Word2Vec: inferir el significado de las palabras a través de sus contextos
  ## Niveles de conocimiento lingüistico
  
  Ordenados de mayor a menor complejidad.
- *Fonético:* la parte más física de la lingüistica. 
-  - Fonética: se estudia el sonido como un continuo.
+ 
+ **Fonético:** la parte más física de la lingüistica. 
+  - Fonética: se estudia el sonido como un continuo. Alófono. 
   - Fonología: establece un sistema simbólico por encima del físico. Qué distinciones físicas hacen que diferentes sonidos sean todos "a"
-  
+  No es lo mismo una "a" aislada o la que va detrás de otra letra/palabra.
+
+Ninguna de las herramientas anteriores trabaja con fonemas.
+
+ **Morfolófico**
+ Sirve para transformar un texto en una estructura mucho mas manejable.
+ "Los niveles de conocimiento lingüistico": Si sabes que "los" es un determinante y "niveles" es un nombre, ya sabes que el "token" de "niveles" tiene mucho mas información.
+ 
+ Si tengo un pronombre y luego un token que es ambigüo, generalmente lo tengo que etiquetar como verbo.
+ 
+ Es decir, el tipo de palabra funciona muy bien como filtros y para desambigûar palabras. Por ejemplo, "Casa". Se puede referir al verbo "casar" o a la palabra "casa".
+ 
+ **Sintáctico**
+ "Yo como caramelos" se guardaría como 
+ 
+ sujeto de come --> Yo
+ Nucleo: come, Dependiente: Caramelos
+ 
+ Sirve en las aplicaciones de análisis de sentimientos, que se basan en ver qué palabras están cargadas de significado.
+ "El café es bueno"
+ "El trato es bueno, el café es una mierda"
+ 
+ **Semántica**
+ Significado de las palabras.
+ Dónde está la semántica real está en los diccionarios, pero es muy complicado usarlo en el mundo real.
+ La formalización del conocimiento semántico se hace en rasgos. 
+ 
+ Semantica de rasgos: Categorías de conceptos interelacionados donde unos tienen unos rasgos y otros no.
+ Por ejemplo, en muebles. Puerta puede tener el rasgo "mas movil". Armario sería "menos movil".
+ Así se podrían categorizar todas las palabras, pasando de un punto de vista de significado a un una matriz de rasgos, con 0 y 1, que es mucho mas sencillo de usar.
+ 
+ **Pragmático**
+ Aquí empieza a estar menos conseguidos los frameworks.
+ 
+ Conocimeinto pragmático sería saber que la palabra "rápido" se usa con un sentido positivo en unas frases y con un sentido negativo en otros.
+ Por ejemplo, la ITV fue rápida o esta obra de teatro se pasó rápido.
+ 
+ **Discurso**
+ Para ámbito de la investigación sobre todo
+ 
+ **Conocimiento del mundo**
+ Usar el lenguaje es trasmitir estados mentales.
+ Lo común de estados mentales y que les permite comunicarse facilmente.
+ 
+ Por ejemplo: Me voy a vivir a Francia. Jo, pero hablas francés?
+ 
+ O le metes un montón de conocimiento del mundo o estás jodido para un bot que responda de manera inteligente.
+ Se suele hacer con bases de conocimiento que se llaman ontologías, lo cual es una manera de representar formalmente conocimiento del mundo.
+ 
+ Ontología: conjunto de tripletas.
+ (concepto1_id, concepto2_id, relacion) 
+ (hipopótamo_id, plantas_id, comen)
+ 
+ En asistentes o bots las ontologías tienen que ser muy muy complejas.
+ Por ejemplo, se está llevando mucho creción de ontologías de Wikipedia.
  
  
   
