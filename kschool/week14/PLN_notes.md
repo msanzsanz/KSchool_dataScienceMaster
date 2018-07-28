@@ -18,14 +18,14 @@ Word2Vec: inferir el significado de las palabras a través de sus contextos
  
  Ordenados de mayor a menor complejidad.
  
- **Fonético:** la parte más física de la lingüistica. 
+ **1. Fonético:** la parte más física de la lingüistica. 
   - Fonética: se estudia el sonido como un continuo. Alófono. 
   - Fonología: establece un sistema simbólico por encima del físico. Qué distinciones físicas hacen que diferentes sonidos sean todos "a"
   No es lo mismo una "a" aislada o la que va detrás de otra letra/palabra.
 
 Ninguna de las herramientas anteriores trabaja con fonemas.
 
- **Morfolófico**
+ **2. Morfolófico**
  Sirve para transformar un texto en una estructura mucho mas manejable.
  "Los niveles de conocimiento lingüistico": Si sabes que "los" es un determinante y "niveles" es un nombre, ya sabes que el "token" de "niveles" tiene mucho mas información.
  
@@ -33,7 +33,7 @@ Ninguna de las herramientas anteriores trabaja con fonemas.
  
  Es decir, el tipo de palabra funciona muy bien como filtros y para desambigûar palabras. Por ejemplo, "Casa". Se puede referir al verbo "casar" o a la palabra "casa".
  
- **Sintáctico**
+ **3. Sintáctico**
  "Yo como caramelos" se guardaría como 
  
  sujeto de come --> Yo
@@ -43,7 +43,7 @@ Ninguna de las herramientas anteriores trabaja con fonemas.
  "El café es bueno"
  "El trato es bueno, el café es una mierda"
  
- **Semántica**
+ **4. Semántica**
  Significado de las palabras.
  Dónde está la semántica real está en los diccionarios, pero es muy complicado usarlo en el mundo real.
  La formalización del conocimiento semántico se hace en rasgos. 
@@ -52,16 +52,16 @@ Ninguna de las herramientas anteriores trabaja con fonemas.
  Por ejemplo, en muebles. Puerta puede tener el rasgo "mas movil". Armario sería "menos movil".
  Así se podrían categorizar todas las palabras, pasando de un punto de vista de significado a un una matriz de rasgos, con 0 y 1, que es mucho mas sencillo de usar.
  
- **Pragmático**
+ **5. Pragmático**
  Aquí empieza a estar menos conseguidos los frameworks.
  
  Conocimeinto pragmático sería saber que la palabra "rápido" se usa con un sentido positivo en unas frases y con un sentido negativo en otros.
  Por ejemplo, la ITV fue rápida o esta obra de teatro se pasó rápido.
  
- **Discurso**
+ **6. Discurso**
  Para ámbito de la investigación sobre todo
  
- **Conocimiento del mundo**
+ **7. Conocimiento del mundo**
  Usar el lenguaje es trasmitir estados mentales.
  Lo común de estados mentales y que les permite comunicarse facilmente.
  
