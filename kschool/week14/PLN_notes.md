@@ -162,3 +162,12 @@ Se hizo para el inglés  y para el resto de las lenguas se hizo con traducción 
 
 Todos los datos de preguntas como "con quien se caso Barack obama" suelen salir de aqui
 
+# PLN
+## Metodologia basado en reglas
+Personas que conocen muy bien la lengua son capaces de codificar la estructura de un idiama
+
+
+## Metodologia basado en estadistica / redes neuronales
+etiquetamos una serie de datos y le pedimos al sistema que nos infiera el resto
+
+
