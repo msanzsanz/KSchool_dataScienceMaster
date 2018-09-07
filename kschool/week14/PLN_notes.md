@@ -126,6 +126,39 @@ En castellano, no funciona muy bien las librerías en abierto.
 
 
 
+# Wordnet 
+Es lexica porque almacena palabra y no 
+pensada principalmente para el ingles
+sustantivos, verbos y adjetivos
+Se basa en agrupar las palabras en conjuntos de sinónimos, en relaciones de hiperonimia y hiponimia.
+hiperonimo de mesa es mueble. Relaciones de tipo de. Esta es la principal estructura de wordnet
+
+tambien hay relaciones de parte de, por ejemplo, bicicleta y manillar. Pero estas relaciones son mucho menos frecuentes.
+
+moverse -> andar -> correr
+gustar -> amar -> idolatrar
 
 
+El arbol sintáctico da mucho mas infrmación que estrucutras como wordnet-
+
+Chequear tambien framenet
+
+# Babble net 
+
+La API para python no la hecho el equipo de BabbleNet y normalmente la API que se suele usar es la de JAVA
+y las queries generalmente en SPARQL
+
+Se le considera mas bien una red semántica, porque incluye mas relaciones de entidades, no de palabras.
+
+Usa wordnet como motor para interpretar las palabras de la wikipedia.
+
+Wikipedia tiene un monton de información de RDF (este es el padre de este)
+
+Se hizo para el inglés  y para el resto de las lenguas se hizo con traducción automática.
+
+
+# Bdpedia 
+
+
+Todos los datos de preguntas como "con quien se caso Barack obama" suelen salir de aqui
 
