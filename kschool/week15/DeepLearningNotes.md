@@ -34,3 +34,16 @@ El gradiente que se suele usar es el SGD (gradiente descendiente estocástico). 
 La primera IA es de los años 50 y la primera red de los 60.
 Aprendemos una representación de los datos que hace que la resolución del problema sea mas sencilla.
 Esa representación probablemente no sea legible por los humanos, por lo que son modelos de caja negra. Lo cual en ocasiones limita las aplicaciones que tiene, muchas veces por temas legales (como en los bancos en si se da la hipoteca)
+
+### Resumen de pasos
+0. Validation split + Feature engineer (normalización, flattern)
+1. Elegir capas --> input_shape
+2. Capas de activacion
+3. Optimizador (no tiene demasiada influencia)
+4. Funcion de pérdidas. Esto es crítico
+5. Otros hiperparámetros: Epocas y batch_size
+
+
+
+
+
