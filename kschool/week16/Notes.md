@@ -96,3 +96,7 @@ En cada bucle el algoritmo se pregunta: debería crecer en el arbol en el que es
 |       |      |    MSE: meanSquaredError | 
 |       |      |    RMSE: squaredRoot (MSE) |
 |       |      |    MAPE: como MAE, pero % | 
+| DecissionTree      | min_leaf, max_depth       |     | 
+| Lineal regression      |      |     | 
+| RandomForest      |      |     |
+| XGBoost      |      |    | 
