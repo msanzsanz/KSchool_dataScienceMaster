@@ -40,7 +40,7 @@ Lo mismo hizo el MIT con su algoritmo para volar.
 Deep learning automatiza de cierta forma la extracción de características y ademas puede llegar mas lejos que los algoritmos tradiccionales.
 
 
-## Ejemplos:
+## Algoritmos de clasificación
 
 ### Should the car go fast or slow?
 
@@ -88,3 +88,11 @@ Para limitar la complejidad del modelo (numero de capas predictoras del error), 
 XGBoost se hace con arboles de decisión
 En cada bucle el algoritmo se pregunta: debería crecer en el arbol en el que estoy o debería crear uno nuevo?
 
+## Algoritmos de regresión
+
+| Alg           | Variabl       | Metrics   | 
+| ------------- |:-------------:| -----:| 
+| KNN      | n_neigbors       |    MAE: meanAbsoluteError | 
+|       |      |    MSE: meanSquaredError | 
+|       |      |    RMSE: squaredRoot (MSE) |
+|       |      |    MAPE: como MAE, pero % | 
