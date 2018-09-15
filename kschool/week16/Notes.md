@@ -64,7 +64,7 @@ Al igual que antes, stacking no siempre da mejor resultado que los clasificadore
 ### Ensemble learning
 El ensamblado se hace secuencialmente, contando con la respuesta de los clasificadores anteriores.
 
-####Bagging
+#### Bagging
 El clasificador es el mismo, pero los datos de entrada son diferentes. Puedes entrenar cada modelo con diferentes muestras de tu población, o con diferentes features por modelo.
 Curioso, porque esto suele mejorar mas que voting o stacking. Conclusion: se obtienen mejores modelos variando los datos de entrada que los clasificadores.
 La manera de fusionar las respuestas es por votación sencilla.
@@ -73,7 +73,7 @@ La manera de fusionar las respuestas es por votación sencilla.
 No es mas que un bagging donde el clasificador base es un decision tree.
 Usa feature importances 
 
-####Bosted learn
+#### Bosted learn
 
 **Adaboost**
 En cada paso el método acierta o falla. En el siguiente paso, se intenta acertar cuando antes se equivocó
