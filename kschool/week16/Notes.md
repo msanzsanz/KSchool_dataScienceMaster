@@ -3,6 +3,20 @@
 ## Introduction
 Goal: Automatizar tareas cognitivas. Aún estamos lejos de la automatización total, suele hacer falta un humano como fase final (concedemos créditos si/no, etc)
 
+## Feature extraction
+
+Varias cosas:
+
+1. Localizar nan y ver qué hacer con ellos (reemplazarlos por mean, eliminar la columna si hay muchos nan, etc.)
+2. Localizar outliers y ver qué hacer con ellos (eliminarlos, hacer dos grupos separados, etc.)
+3. Convertir variables categoricas con onehotencoder pero, puedes tener la maldición por muchas features.
+Si esto ocurre, puedo transformar mis variables categóricas a números.
+Dos opciones para transformar las variables categóricas: Dummies o pesos
+4. Normalizar variables continas (RobustScaler)
+Para el randomforex el scalado no sería tan importante, pero como luego se compara con otros algoritmos, pues es bueno hacerlo.
+5. Pipeline
+6. Echar un ojo a TPOT
+
 ## Cómo aprenden las máquinas:
 
 ### 1. Por generalización (aprendizaje supervisado)
