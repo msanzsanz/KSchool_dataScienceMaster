@@ -5,7 +5,7 @@ Goal: Automatizar tareas cognitivas. Aún estamos lejos de la automatización to
 
 ## Cómo aprenden las máquinas:
 
-### Por generalización (aprendizaje supervisado)
+### 1. Por generalización (aprendizaje supervisado)
 Extracción de características e identificación de reglas para clasificar los modelos no vistos.
 
 | Forma         | Color         | Area  | Etiqueta |
@@ -21,7 +21,7 @@ Predict a continuous value
 #### Clasifiación
 Predict a discrite value
 
-### Por comparación (aprendizaje no supervisado)
+### 2. Por comparación (aprendizaje no supervisado)
 Igual que antes, pero no hay etiqueta. 
 Los objetos se agrupan por similitud.
 
@@ -31,7 +31,7 @@ Ej: Segmentación clientes, detección fraude (anomalía con respecto a las otra
 #### Reducción de dimensionalidad
 #### Motores de recomendación
 
-### Por refuerzo (reinforcement learning)
+### 3. Por refuerzo (reinforcement learning)
 Según la acción que haga el algoritmo se le da una recompensa.
 Parecido a lo que se hace con las palomas, dándoles un premio cuando aciertan. Lo mismo ocurre con los coches que conducen solos. (el algoritmo se realimenta con la métrica según la acción que haces. El algoritmo siempre intenta maximizar la métrica)
 Lo mismo hizo el MIT con su algoritmo para volar.
@@ -52,4 +52,39 @@ En cada fase del arbol, divido mi dataset en dos dataset mas homogéneos que el 
 echar un ojo al gini y entropia
 
 
-### Ensemble methods
+## Ensemble methods
+
+### Votación
+Mergear diferentes algoritmos de clasificación no siempre da resultados mejores, como vimos en el ejemplo.
+
+### Stacking
+En vez de hacer una votación simple, en la caja que agrupa los resultados se aplica también ML para intentar dar una votación algo mas inteligente.
+Al igual que antes, stacking no siempre da mejor resultado que los clasificadores aisladamente.
+
+### Ensemble learning
+El ensamblado se hace secuencialmente, contando con la respuesta de los clasificadores anteriores.
+
+####Bagging
+El clasificador es el mismo, pero los datos de entrada son diferentes. Puedes entrenar cada modelo con diferentes muestras de tu población, o con diferentes features por modelo.
+Curioso, porque esto suele mejorar mas que voting o stacking. Conclusion: se obtienen mejores modelos variando los datos de entrada que los clasificadores.
+La manera de fusionar las respuestas es por votación sencilla.
+
+**Random forest**
+No es mas que un bagging donde el clasificador base es un decision tree.
+Usa feature importances 
+
+####Bosted learn
+
+**Adaboost**
+En cada paso el método acierta o falla. En el siguiente paso, se intenta acertar cuando antes se equivocó
+pone un coeficiente a cada experimento (número de errores del experimento) y luego pone un peso a cada error.
+
+**XGBoost**
+este ganaba casi todas las combinaciones de kaggle.
+Lo que hace es ir que predice el valor y predice el error. Y adicionalmente, los siguientes expertos lo que hacen es predecir el error del anterior e intentar predecirlo.
+
+Para limitar la complejidad del modelo (numero de capas predictoras del error), se añade lo que se denomina reguralizacion. 
+
+XGBoost se hace con arboles de decisión
+En cada bucle el algoritmo se pregunta: debería crecer en el arbol en el que estoy o debería crear uno nuevo?
+
