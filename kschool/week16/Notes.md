@@ -114,3 +114,16 @@ En cada bucle el algoritmo se pregunta: debería crecer en el arbol en el que es
 | Lineal regression      |      |     | 
 | RandomForest      |      |     |
 | XGBoost      |      |    | 
+
+
+##########
+
+Hola,
+
+    Os dejo todos notebooks y recapitulatorios que faltan. En lo que respecta el preprocesado de caracteristicas, prefiero daros directamente los enlaces en Kaggle:
+https://www.kaggle.com/serigne/stacked-regressions-top-4-on-leaderboard
+https://www.kaggle.com/dansbecker/handling-missing-values
+https://www.kaggle.com/dansbecker/using-categorical-data-with-one-hot-encod…
+
+Aqui teneis unas cheat sheet que os pueden ser de ayuda:
+https://github.com/afshinea/stanford-cs-229-machine-learning
