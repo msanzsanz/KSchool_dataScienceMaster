@@ -78,4 +78,96 @@ Ninguna de las herramientas anteriores trabaja con fonemas.
  Por ejemplo, se está llevando mucho creción de ontologías de Wikipedia.
  
  
-  
+### Ejemplos 
+
+- Las ranas verdes tienen la nariz grande
+se rompe la prágmatica
+
+- las ideas verdes tiene la nariz grande.
+Se rompe la semántica (no puedo decir si es verdad o mentira)
+una idea tendría un rasgo abstracto, por lo cual no podría tener un rasgo mas concreto.
+Aqui necesitamos los rasgos semánticos (semas)
+
+- la las tienene verdes grandes nariz ideas.
+Se rompe la sintaxis.
+
+## Segmentación en frases
+Segmentar con puntos es muy débil, dado que existen Sr., D., etc. que también terminan en punto o incluso gente que escribe mal y no pone puntos.
+
+LA discriminación sintaxica ayuda con esto.
+
+TNS: categorizar opiniones de la gente
+
+## Segmentación en tokens
+La función split de python.
+Los problemas de tokenización son mas fáciles de resolver que los problemas de segmentación en frases.
+
+## Etiquetado morfológico
+PoS: part of speech
+
+## lematización
+masculino singular en el caso de los sustantivos
+infinitivo en caso de los verbos
+fortisimo a fuerte
+
+## eliminación de stop words
+Palabras qe no te interesan para una determinada tarea
+
+## etiquetado dependencial (etiquetado sintáctico)
+la depende de capital con una relación de tipo -> determinante
+
+## localización de los sintagmas nominales
+
+## reconocimiento de entidades nombradas
+LOC: location
+
+# Resolución de correferencias
+En castellano, no funciona muy bien las librerías en abierto.
+
+
+
+# Wordnet 
+Es lexica porque almacena palabra y no 
+pensada principalmente para el ingles
+sustantivos, verbos y adjetivos
+Se basa en agrupar las palabras en conjuntos de sinónimos, en relaciones de hiperonimia y hiponimia.
+hiperonimo de mesa es mueble. Relaciones de tipo de. Esta es la principal estructura de wordnet
+
+tambien hay relaciones de parte de, por ejemplo, bicicleta y manillar. Pero estas relaciones son mucho menos frecuentes.
+
+moverse -> andar -> correr
+gustar -> amar -> idolatrar
+
+
+El arbol sintáctico da mucho mas infrmación que estrucutras como wordnet-
+
+Chequear tambien framenet
+
+# Babble net 
+
+La API para python no la hecho el equipo de BabbleNet y normalmente la API que se suele usar es la de JAVA
+y las queries generalmente en SPARQL
+
+Se le considera mas bien una red semántica, porque incluye mas relaciones de entidades, no de palabras.
+
+Usa wordnet como motor para interpretar las palabras de la wikipedia.
+
+Wikipedia tiene un monton de información de RDF (este es el padre de este)
+
+Se hizo para el inglés  y para el resto de las lenguas se hizo con traducción automática.
+
+
+# Bdpedia 
+
+
+Todos los datos de preguntas como "con quien se caso Barack obama" suelen salir de aqui
+
+# PLN
+## Metodologia basado en reglas
+Personas que conocen muy bien la lengua son capaces de codificar la estructura de un idiama
+
+
+## Metodologia basado en estadistica / redes neuronales
+etiquetamos una serie de datos y le pedimos al sistema que nos infiera el resto
+
+
