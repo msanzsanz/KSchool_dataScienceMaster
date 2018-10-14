@@ -1,0 +1,13 @@
+{
+    "path" : "~/Documents/MSS/Personales/GitRepos/KSchool_dataScienceMaster/kschool/week10/Shiny/reactividad",
+    "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
