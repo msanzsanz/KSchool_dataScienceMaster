@@ -13,3 +13,6 @@
 3. Data-ink-ratio 
     a. Make it right in black and white
     b. use hue color
+    
+## Tableau
+- Al exportar con tableau empaquetado, adicionalmente a la visualización incluye los datos, de cara a enviarlos a terceros.
