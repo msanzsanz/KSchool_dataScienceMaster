@@ -95,3 +95,5 @@ Variantes... Fecha, cliente, tiempo en página
             
 .... Con que tengas Fecha, ID, variable numérica se puede montar una segmentación comportamental miuy fácil.
 
+Se puede usar de manera reactiva para analizar los cambios de clientes
+De manera proactiva, puedes predecir qué va a pasar con un cliente
